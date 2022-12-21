@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/bottompad"
+    android:paddingLeft="@dimen/rightpad"
+    android:paddingRight="@dimen/rightpad"
+    android:paddingTop="@dimen/bottompad"
+    android:background="@color/grayDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_header_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rightpad"
+        android:text="@string/text_header_reply"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#BCBCBC"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/text_message_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header_reply"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/rightpad"
+        android:layout_marginStart="@dimen/bottompad"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grayLight"
+        android:onClick="launchSecondActivity"
+        android:text="@string/button_main"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button_main"
+        android:layout_toLeftOf="@+id/button_main"
+        android:hint="@string/editText_main"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayLight" />
+</RelativeLayout>

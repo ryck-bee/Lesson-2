@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/bottompad"
+    android:paddingLeft="@dimen/rightpad"
+    android:paddingRight="@dimen/rightpad"
+    android:paddingTop="@dimen/bottompad"
+    android:background="@color/grayDark"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottompad"
+        android:text="@string/text_header"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#BCBCBC"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/rightpad"
+        android:layout_marginStart="@dimen/rightpad"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/grayLight"
+        android:textColor="@color/white"
+        android:onClick="returnReply"
+        android:text="@string/button_second" />
+
+    <EditText
+        android:id="@+id/editText_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button_second"
+        android:layout_toStartOf="@id/button_second"
+        android:hint="@string/editText_second"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayLight" />
+
+</RelativeLayout>
